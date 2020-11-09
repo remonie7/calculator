@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -2310,7 +2310,9 @@
     <comment>Label displayed next to upcoming features</comment>
   </data>
   <data name="AboutControlPrivacyStatement.Text" xml:space="preserve">
-    <value>Microsoft 개인정보취급방침</value>
+  <!--  <value>Microsoft 개인정보취급방침</value>
+    <comment>Displayed on a link to the Microsoft Privacy Statement on the About panel</comment> -->
+      <value>수정자 깃허브</value>
     <comment>Displayed on a link to the Microsoft Privacy Statement on the About panel</comment>
   </data>
   <data name="AboutControlCopyright" xml:space="preserve">

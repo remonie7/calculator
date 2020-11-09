@@ -928,12 +928,13 @@ void UnitConverterDataLoader::GetConversionData(_In_ unordered_map<ViewMode, uno
                                                    { ViewMode::Angle, UnitConverterUnits::Angle_Radian, 57.29577951308233 },
                                                    { ViewMode::Angle, UnitConverterUnits::Angle_Gradian, 0.9 },
 
+//이 부분을 수정해 내가 원하는대로 압력단위 변환을 할 수 있도록 하였다. (oss 코드리뷰 연습 차원)
                                                    { ViewMode::Pressure, UnitConverterUnits::Pressure_Atmosphere, 1 },
-                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_Bar, 0.9869232667160128 },
-                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_KiloPascal, 0.0098692326671601 },
-                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_MillimeterOfMercury, 0.0013155687145324 },
-                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_Pascal, 9.869232667160128e-6 },
-                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_PSI, 0.068045961016531 } };
+                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_Bar, 0.1 },
+                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_KiloPascal, 0.01 },
+                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_MillimeterOfMercury, 0.001 },
+                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_Pascal, 0.0001 },
+                                                   { ViewMode::Pressure, UnitConverterUnits::Pressure_PSI, 0.00001 } };
 
     // Populate the hash map and return;
     for (UnitData unitdata : unitDataList)
